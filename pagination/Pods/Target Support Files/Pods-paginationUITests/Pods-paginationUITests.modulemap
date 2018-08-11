@@ -1,0 +1,6 @@
+framework module Pods_paginationUITests {
+  umbrella header "Pods-paginationUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
