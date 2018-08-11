@@ -62,7 +62,8 @@ class HomeViewController: UIViewController {
     /// Function to setup navigation title
     private func setUpNavigationTitle() {
         self.title = "Contacts"
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
+        
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0 / 255.0, green: 84 / 255.0, blue: 147 / 255.0, alpha: 1.0)
         self.navigationController?.navigationBar.tintColor = UIColor(red: 0 / 255.0, green: 84 / 255.0, blue: 147 / 255.0, alpha: 1.0)
     }
@@ -89,8 +90,8 @@ class HomeViewController: UIViewController {
                 backgroundview.backgroundColor = UIColor.white
                 
                 // Rounded corner
-                backgroundview.layer.cornerRadius = 10;
-                backgroundview.clipsToBounds = true;
+                backgroundview.layer.cornerRadius = 10
+                backgroundview.clipsToBounds = true
             }
         }
         navigationItem.searchController = searchController
