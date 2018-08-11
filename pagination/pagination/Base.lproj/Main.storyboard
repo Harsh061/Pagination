@@ -263,9 +263,11 @@
                     </view>
                     <connections>
                         <outlet property="firstNameLabel" destination="HoA-Ua-KX6" id="Sw1-s8-moc"/>
+                        <outlet property="headerView" destination="Zat-Fx-Fxn" id="Smi-ng-CPx"/>
                         <outlet property="lastNameLabel" destination="EJA-oD-njg" id="h3N-4N-8zI"/>
                         <outlet property="profileBackgroundImage" destination="ymN-n8-uLr" id="k1A-Re-vp6"/>
                         <outlet property="profileImage" destination="U4F-YH-822" id="jGK-WV-OPk"/>
+                        <outlet property="statusView" destination="0DW-G8-307" id="AU3-BQ-UUU"/>
                         <outlet property="titleLabel" destination="Z4B-gE-OJ5" id="YDh-aF-lyQ"/>
                     </connections>
                 </viewController>
@@ -365,7 +367,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="37V-xx-ch7" firstAttribute="centerX" secondItem="BV3-KZ-DIC" secondAttribute="centerX" id="CY3-qv-gGl"/>
                                     <constraint firstItem="37V-xx-ch7" firstAttribute="centerY" secondItem="BV3-KZ-DIC" secondAttribute="centerY" id="PwH-ef-QxV"/>
@@ -376,7 +378,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="BV3-KZ-DIC" firstAttribute="bottom" secondItem="QAp-l2-Nk9" secondAttribute="bottom" id="AQW-pH-W1i"/>
+                            <constraint firstItem="BV3-KZ-DIC" firstAttribute="bottom" secondItem="vNb-NG-Ung" secondAttribute="bottom" id="AQW-pH-W1i"/>
                             <constraint firstItem="BV3-KZ-DIC" firstAttribute="leading" secondItem="QAp-l2-Nk9" secondAttribute="leading" id="JY2-WJ-Ekf"/>
                             <constraint firstItem="BV3-KZ-DIC" firstAttribute="top" secondItem="vNb-NG-Ung" secondAttribute="top" id="Xu8-Ux-ARU"/>
                             <constraint firstItem="BV3-KZ-DIC" firstAttribute="trailing" secondItem="QAp-l2-Nk9" secondAttribute="trailing" id="rpB-Nl-Mc2"/>
@@ -384,6 +386,7 @@
                         <viewLayoutGuide key="safeArea" id="QAp-l2-Nk9"/>
                     </view>
                     <connections>
+                        <outlet property="backgroundView" destination="BV3-KZ-DIC" id="8Xo-rX-YY0"/>
                         <outlet property="profileImage" destination="37V-xx-ch7" id="3t8-8O-fOb"/>
                     </connections>
                 </viewController>

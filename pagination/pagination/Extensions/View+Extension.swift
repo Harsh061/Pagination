@@ -26,7 +26,7 @@ extension UIView {
         gradientLayer.frame = self.layer.bounds
         gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
         gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
-        gradientLayer.colors = [UIColor(red: 63 / 255.0, green: 84 / 255.0, blue: 114 / 255.0, alpha: 1.0).cgColor, UIColor(red: 18 / 255.0, green: 29 / 255.0, blue: 45 / 255.0, alpha: 1.0).cgColor]
+        gradientLayer.colors = [UIColor(red: 0 / 255.0, green: 128 / 255.0, blue: 198 / 255.0, alpha: 1.0).cgColor, UIColor(red: 0 / 255.0, green: 84 / 255.0, blue: 147 / 255.0, alpha: 1.0).cgColor]
         self.layer.insertSublayer(gradientLayer, at: 0)
     }
 }

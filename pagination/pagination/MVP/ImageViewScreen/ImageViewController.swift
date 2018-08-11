@@ -15,7 +15,7 @@ class ImageViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var profileImage: UIImageView!
-    
+    @IBOutlet weak var backgroundView: UIView!
     
     // MARK: - Button Action
     @IBAction func dismissAction(_ sender: Any) {
@@ -25,6 +25,7 @@ class ImageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.backgroundView.backgroundColor = UIColor.black
         var imageURL: URL? = nil
         let imageData = self.userImageString
         if let url: URL =  URL(string: imageData) {

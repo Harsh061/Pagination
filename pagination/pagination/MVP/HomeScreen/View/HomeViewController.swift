@@ -61,7 +61,7 @@ class HomeViewController: UIViewController {
     
     /// Function to setup navigation title
     private func setUpNavigationTitle() {
-        self.title = "Home Screen"
+        self.title = "Contacts"
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0 / 255.0, green: 84 / 255.0, blue: 147 / 255.0, alpha: 1.0)
         self.navigationController?.navigationBar.tintColor = UIColor(red: 0 / 255.0, green: 84 / 255.0, blue: 147 / 255.0, alpha: 1.0)
@@ -81,11 +81,21 @@ class HomeViewController: UIViewController {
         searchController.searchBar.barTintColor = UIColor.white
         searchController.searchBar.tintColor = UIColor.white
         // TextField Color Customization
-        let textFieldInsideSearchBar = searchController.searchBar.value(forKey: "searchField") as? UITextField
-        textFieldInsideSearchBar?.textColor = UIColor.white
-        textFieldInsideSearchBar?.tintColor = UIColor.white
+        if let textFieldInsideSearchBar = searchController.searchBar.value(forKey: "searchField") as? UITextField {
+            UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).defaultTextAttributes = [NSAttributedStringKey.foregroundColor.rawValue: UIColor.black]
+            if let backgroundview = textFieldInsideSearchBar.subviews.first {
+                
+                // Background color
+                backgroundview.backgroundColor = UIColor.white
+                
+                // Rounded corner
+                backgroundview.layer.cornerRadius = 10;
+                backgroundview.clipsToBounds = true;
+            }
+        }
         navigationItem.searchController = searchController
         definesPresentationContext = true
+        
     }
     
     /// Function to register table cell

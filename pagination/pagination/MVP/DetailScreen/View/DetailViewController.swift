@@ -15,6 +15,8 @@ class DetailViewController: UIViewController {
     private var presenter: DetailPresenter!
     
     // MARK: - Outlets
+    @IBOutlet weak var statusView: UIView!
+    @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var firstNameLabel: UILabel!
@@ -52,6 +54,8 @@ class DetailViewController: UIViewController {
     /// Function to setup navigation
     private func setupNavigation() {
         self.navigationController?.navigationBar.isHidden = true
+        self.statusView.createGradientLayer()
+        self.headerView.createGradientLayer()
     }
     
     /// FUnctio to setup user data
