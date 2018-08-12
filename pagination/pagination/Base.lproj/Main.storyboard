@@ -59,9 +59,12 @@
                                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
                                                         <color key="backgroundColor" red="0.0" green="0.3294117647" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                                        <state key="normal" title="Filter">
+                                                        <state key="normal" title="Reset">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="resetBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="baR-J3-aXI"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>

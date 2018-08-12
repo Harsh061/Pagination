@@ -38,6 +38,11 @@ class HomeViewController: UIViewController {
         }
     }
     
+    @IBAction func resetBtnAction(_ sender: Any) {
+        presenter.reset()
+        presenter.getAllUsersList()
+    }
+    
     // MARK: - App life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
